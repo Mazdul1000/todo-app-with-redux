@@ -2,7 +2,7 @@ import { useDispatch } from "react-redux";
 import cancelImage from "../assets/images/cancel.png";
 import { colorSeleted, deleted, toggled } from "../redux/todos/actions";
 
-export default function Todo({todo}) {
+const Todo = ({todo}) => {
     const dispatch = useDispatch();
     const {text, completed, color, id} = todo;
 
@@ -53,3 +53,5 @@ export default function Todo({todo}) {
         </div>
     );
 }
+
+export default Todo;

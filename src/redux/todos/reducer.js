@@ -11,7 +11,8 @@ const reducer = (state = initialState, action) => {
             return [
                 ...state,
                 {
-                    id: nextTodoId(state)
+                    id: nextTodoId(state),
+                    text: action.payload
                 }
             ]
             
