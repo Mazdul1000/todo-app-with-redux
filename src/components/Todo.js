@@ -1,13 +1,15 @@
 import { useDispatch } from "react-redux";
 import cancelImage from "../assets/images/cancel.png";
 import { colorSeleted, deleted, toggled } from "../redux/todos/actions";
+import updateTodoStatus from "../redux/todos/thunk/updateTodoStatus";
+
 
 const Todo = ({todo}) => {
     const dispatch = useDispatch();
     const {text, completed, color, id} = todo;
 
     const handleStatusChange = (todoId) => {
-      dispatch(toggled(todoId))
+      dispatch(updateTodoStatus(todoId, completed))
     }
 
     const handleColorChange = (todoId, color) => {
@@ -23,7 +25,7 @@ const Todo = ({todo}) => {
                 <input
                     type="checkbox"
                     checked={completed}
-                    onChange= {() => handleStatusChange(id)}
+                    onChange= {() => handleStatusChange(id, completed)}
                     className="opacity-0 absolute rounded-full"
                 />
                {completed &&
