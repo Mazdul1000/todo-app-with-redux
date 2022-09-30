@@ -1,11 +1,1 @@
-export const initialState = [{
-    id: 1,
-    text: "Learn React JS",
-    completed: true,
-    color: "red"
-}, {
-    id: 2,
-    text: "Learn Redux",
-    completed: false,
-    color: "green"
-}]
+export const initialState = []
