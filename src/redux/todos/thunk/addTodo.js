@@ -1,7 +1,7 @@
 import { added } from "../actions";
 
  const addTodo = (todoText) => {
-    return async (disptach, getState) => {
+    return async (disptach) => {
         const response = await fetch('http://localhost:9000/todos', {
             method: "POST",
             headers: {

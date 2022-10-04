@@ -9,13 +9,13 @@
     {
       "id": 2,
       "text": "Learn Modern ES6+ JavaScript",
-      "completed": true,
+      "completed": false,
       "color": "red"
     },
     {
       "id": 3,
       "text": "Learn React JS",
-      "completed": false,
+      "completed": true,
       "color": "yellow"
     },
     {
@@ -26,13 +26,13 @@
     },
     {
       "text": "Learn Redux fundamentals",
-      "completed": false,
+      "completed": true,
       "id": 5,
       "color": "red"
     },
     {
       "text": "learn Redux",
-      "completed": true,
+      "completed": false,
       "id": 6
     },
     {
@@ -42,13 +42,38 @@
     },
     {
       "text": "Test",
-      "completed": true,
+      "completed": false,
       "id": 8
     },
     {
       "text": "Learn Node js",
       "completed": false,
       "id": 9
+    },
+    {
+      "text": "hello world",
+      "completed": false,
+      "id": 10
+    },
+    {
+      "text": "Gelo",
+      "completed": true,
+      "id": 11
+    },
+    {
+      "text": "hello",
+      "completed": false,
+      "id": 12
+    },
+    {
+      "text": "hello",
+      "completed": false,
+      "id": 13
+    },
+    {
+      "text": "hello",
+      "completed": false,
+      "id": 14
     }
   ]
 }
